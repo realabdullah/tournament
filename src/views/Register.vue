@@ -6,44 +6,35 @@
         <div class="formbg-outer">
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
-              <span class="padding-bottom--15">Create an account</span>
+              <span class="padding-bottom--15">Register to participate</span>
               <form id="stripe-login" @submit.prevent="signUp">
-                <div class="field padding-bottom--24">
-                  <label for="username">Username</label>
-                  <input type="text" name="username" v-model="username">
-                </div>
-                <div class="field padding-bottom--24">
-                  <label for="first-name">First Name</label>
-                  <input type="text" name="first-name" v-model="first_name">
-                </div>
-                <div class="field padding-bottom--24">
-                  <label for="last-name">Last Name</label>
-                  <input type="text" name="last-name" v-model="last_name">
-                </div>
                 <div class="field padding-bottom--24">
                   <label for="email">Email</label>
                   <input type="email" name="email" v-model="email">
                 </div>
                 <div class="field padding-bottom--24">
-                  <div class="grid--50-50">
-                    <label for="password">Password</label>
-                    <!-- <div class="reset-pass">
-                      <a href="#">Forgot your password?</a>
-                    </div> -->
-                  </div>
-                  <input type="password" name="password" v-model="password">
+                  <label for="username">Name</label>
+                  <input type="text" name="username" v-model="username">
+                </div>
+                <div class="field padding-bottom--24">
+                  <label for="faculty">Faculty</label>
+                  <input type="text" name="faculty" v-model="faculty">
+                </div>
+                <div class="field padding-bottom--24">
+                  <label for="department">Department</label>
+                  <input type="text" name="department" v-model="department">
                 </div>
                 <div class="field padding-bottom--24">
                   <label for="phone">Mobile Number</label>
                   <input type="telephone" name="phone" v-model="phone">
                 </div>
                 <div class="field padding-bottom--24">
-                  <label for="country">Country</label>
-                  <input type="text" name="country" v-model="country">
+                  <label for="game">Game to play</label>
+                  <input type="text" name="game" v-model="game">
                 </div>
                 <div class="field padding-bottom--24">
-                  <label for="state">State</label>
-                  <input type="text" name="state" v-model="state">
+                  <label for="userId">UserId</label>
+                  <input type="text" name="userId" v-model="userId">
                 </div>
                 <div class="field padding-bottom--24"><button class="submi" v-if="loading">
                     <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
@@ -65,9 +56,6 @@
                   </button>
                   <button class="submit" v-else>Sign Up</button>
                 </div>
-                <!-- <div class="field">
-                  <a class="ssolink" href="#">Use single sign-on (Google) instead</a>
-                </div> -->
               </form>
             </div>
           </div>
@@ -137,33 +125,7 @@ a {
     -ms-flex-direction: column;
     flex-direction: column;
 }
-.loginbackground-gridContainer {
-    display: -ms-grid;
-    display: grid;
-    justify-content: center;
-    margin: 0 -2%;
-    transform: rotate(-12deg) skew(-12deg);
-    grid-template-columns: [start] 1fr [left-gutter] repeat(16,86.6px) [left-gutter] 1fr [end];
-    grid-template-rows: [top] 1fr [top-gutter] repeat(8,64px) [bottom-gutter] 1fr [bottom];
-}
-.box-divider--light-all-2 {
-    box-shadow: inset 0 0 0 2px #e3e8ee;
-}
-.box-background--blue {
-    background-color: #353030;
-}
-.box-background--white {
-  background-color: #ffffff; 
-}
-.box-background--blue800 {
-    background-color: #212d63;
-}
-.box-background--gray100 {
-    background-color: #e3e8ee;
-}
-.box-background--cyan200 {
-    background-color: #7fd3ed;
-}
+
 .padding-top--64 {
   padding-top: 64px;
 }
@@ -183,14 +145,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.formbg {
-    margin: 0px auto;
-    width: 100%;
-    max-width: 448px;
-    background: white;
-    border-radius: 4px;
-    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
-}
+
 span {
     display: block;
     font-size: 20px;
@@ -198,15 +153,6 @@ span {
     color: #1a1f36;
 }
 label {
-    margin-bottom: 10px;
-}
-.reset-pass a,label {
-    font-size: 14px;
-    font-weight: 600;
-    display: block;
-}
-.reset-pass > a {
-    text-align: right;
     margin-bottom: 10px;
 }
 .grid--50-50 {
