@@ -46,7 +46,7 @@
     <div class="enquiries">
       <h4>For more enquiries and sponsorships:</h4>
       <div class="contact">
-        MJ - <span>08171464003</span>, Saybudu - <span>08103840212,</span> Williams - <span>09034696604</span>
+        MJ - <span> <a href="https://wa.me/2348171464003">08171464003</a></span>, Saybudu - <span><a href="https://wa.me/2348103840212">08103840212</a>,</span> Williams - <span><a href="https://wa.me/2349034696604">09034696604</a></span>
       </div>
     </div>
   </div>
@@ -191,7 +191,8 @@ export default {
     border-radius: 20px;
   }
 
-  .contact span {
+  .contact span a {
+    text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
     color: #c5c0c0;
   }
