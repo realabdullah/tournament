@@ -16,13 +16,11 @@
     <div class="cod-video">
       <video width="100%" height="auto" autoplay>
         <source src="../assets/codm.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
       </video>
     </div>
     <div class="cod-video">
       <video width="100%" height="auto" autoplay>
         <source src="../assets/br.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
       </video>
     </div>
     <div class="howto">
