@@ -129,6 +129,7 @@ export default {
 
   .cod-video video {
     border-radius: 20px;
+    box-shadow:  20px 20px 60px #bebebe, -20px -19px 20px #ffffff;
   }
 
   .howto {
