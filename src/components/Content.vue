@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="first-box">
-      <h2>Mobile Games Tournament  2021</h2>
+      <h2>Mobile Games Tournament <span>2021</span></h2>
       <h4>PES & CODM</h4>
     </div>
     <div class="pes">
@@ -21,7 +21,9 @@
       <li>Department</li>
       <li>Game interested in</li>
       <li>UserId</li>
-      <button>Register</button>
+      <router-link to="/register">
+        <button>Register</button>
+      </router-link>
     </div>
     <div class="rules">
       <h3>Rules & Regulation of the tournament</h3>
@@ -57,11 +59,16 @@ export default {
   }
 
   .first-box h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #03045E;
   }
 
+  .first-box h2 span {
+    font-family: 'Cookie', cursive;
+  }
+
   .first-box h4 {
+    font-family: 'Cookie', cursive;
     font-size: 1.24em;
     color: #0077B6;
   }
