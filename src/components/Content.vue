@@ -20,7 +20,7 @@
     </div>
     <div class="howto">
       <h3>How to register</h3>
-      <li>A registration fee of #5,000</li>
+      <li>A registration fee of #500</li>
       <li>Name</li>
       <li>Faculty</li>
       <li>Department</li>
@@ -178,6 +178,7 @@ export default {
 
   .enquiries {
     margin-bottom: 1rem;
+    margin-inline: 2rem;
   }
 
   .contact {
@@ -189,11 +190,17 @@ export default {
     padding: .1rem .5rem;
     font-size: .9rem;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
   }
 
   .contact span a {
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
     color: #c5c0c0;
+    font-size: .9rem;
   }
 </style>
