@@ -30,7 +30,11 @@
                 </div>
                 <div class="field padding-bottom--24">
                   <label for="game">Game to play</label>
-                  <input type="text" name="game" v-model="game">
+                  <select v-model="game">
+                    <option value="cod">COD Mobile</option>
+                    <option value="pes">PES Mobile</option>
+                    <option value="both">Both</option>
+                  </select>
                 </div>
                 <div class="field padding-bottom--24">
                   <label class="padding-bottom--7" for="userId">UserId</label>
@@ -164,7 +168,8 @@ label {
     grid-template-columns: 50% 50%;
     align-items: center;
 }
-.field input {
+.field input,
+.field select {
     font-size: 16px;
     line-height: 28px;
     margin-top: 10px;
