@@ -1,7 +1,9 @@
 <template>
   <div class="navbar">
     <div class="logo">
-      EFOSA.
+      <router-link to="/">
+        EFOSA.
+      </router-link>
     </div>
     <div class="menu">
       <div></div>
@@ -27,7 +29,8 @@ export default {
   box-shadow: 8px 10px 12px hsl(0deg 0% 61% / 20%);
 }
 
-.navbar .logo {
+.navbar .logo a {
+  text-decoration: none;
   font-size: 2.2rem;
   font-weight: 700;
   color: #023E8A;

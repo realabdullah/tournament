@@ -8,7 +8,7 @@
       <img src="../assets/messi.png" alt="messi">
     </div>
     <div class="cod">
-      <img src="../assets/codsoldier.png" alt="cod">
+      <img src="../assets/codmobile.png" alt="cod">
     </div>
     <div class="ad">
       <p>Do you want to participate in a one of a kind campus based mobile game tournament and win cash prizes?</p>
@@ -99,7 +99,10 @@ export default {
   .cod {
     margin-block: 2rem;
     padding: .4rem;
-    background-color: #2100b6;
+    padding-bottom: 0px;
+    /* background-color: #2100b6; */
+    background: rgb(237,0,80);
+    background: linear-gradient(90deg, rgba(237,0,80,1) 0%, rgba(26,217,15,1) 28%, rgba(167,0,144,1) 100%);
     border-radius: 20px;
   }
 
