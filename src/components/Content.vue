@@ -14,7 +14,7 @@
       <p>Do you want to participate in a one of a kind campus based mobile game tournament and win cash prizes?</p>
     </div>
     <div class="cod-video">
-      <video width="100%" height="auto" autoplay muted>
+      <video width="100%" height="auto" autoplay muted loop>
         <source src="../assets/codm.mp4" type="video/mp4">
       </video>
     </div>
@@ -31,7 +31,7 @@
       </router-link>
     </div>
     <div class="cod-video">
-      <video width="100%" height="auto" autoplay muted>
+      <video width="100%" height="auto" autoplay muted loop>
         <source src="../assets/br.mp4" type="video/mp4">
       </video>
     </div>
