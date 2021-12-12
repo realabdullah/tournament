@@ -14,13 +14,8 @@
       <p>Do you want to participate in a one of a kind campus based mobile game tournament and win cash prizes?</p>
     </div>
     <div class="cod-video">
-      <video width="100%" height="auto" autoplay>
+      <video width="100%" height="auto" autoplay muted>
         <source src="../assets/codm.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="cod-video">
-      <video width="100%" height="auto" autoplay>
-        <source src="../assets/br.mp4" type="video/mp4">
       </video>
     </div>
     <div class="howto">
@@ -34,6 +29,11 @@
       <router-link to="/register">
         <button>Register</button>
       </router-link>
+    </div>
+    <div class="cod-video">
+      <video width="100%" height="auto" autoplay muted>
+        <source src="../assets/br.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="rules">
       <h3>Rules & Regulation of the tournament</h3>
