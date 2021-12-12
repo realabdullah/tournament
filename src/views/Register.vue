@@ -33,7 +33,7 @@
                   <input type="text" name="game" v-model="game">
                 </div>
                 <div class="field padding-bottom--24">
-                  <label for="userId">UserId</label>
+                  <label class="padding-bottom--7" for="userId">UserId</label>
                   <input type="text" name="userId" v-model="userId">
                 </div>
                 <div class="field padding-bottom--24"><button class="submi" v-if="loading">
@@ -54,7 +54,7 @@
                     </g>
                   </svg>
                   </button>
-                  <button class="submit" v-else>Sign Up</button>
+                  <button class="submit" v-else>Register</button>
                 </div>
               </form>
             </div>
@@ -141,6 +141,10 @@ a {
 .padding-bottom--15 {
   padding-bottom: 15px;
 }
+
+.padding-bottom--7 {
+  margin-bottom: 7px;
+}
 .flex-justifyContent--center {
   -ms-flex-pack: center;
   justify-content: center;
@@ -163,6 +167,7 @@ label {
 .field input {
     font-size: 16px;
     line-height: 28px;
+    margin-top: 10px;
     padding: 8px 16px;
     width: 100%;
     min-height: 44px;
@@ -208,7 +213,6 @@ label {
 .field-checkbox label {
     display: flex;
     align-items: center;
-    margin: 0;
 }
 a.ssolink {
     display: block;

@@ -13,6 +13,18 @@
     <div class="ad">
       <p>Do you want to participate in a one of a kind campus based mobile game tournament and win cash prizes?</p>
     </div>
+    <div class="cod-video">
+      <video width="100%" height="auto" autoplay>
+        <source src="../assets/codm.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      </video>
+    </div>
+    <div class="cod-video">
+      <video width="100%" height="auto" autoplay>
+        <source src="../assets/br.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      </video>
+    </div>
     <div class="howto">
       <h3>How to register</h3>
       <li>A registration fee of #5,000</li>
@@ -108,6 +120,14 @@ export default {
     font-size: 1.8rem;
     font-weight: 600;
     color: #232425;
+  }
+
+  .cod-video {
+    margin-block: 2rem;
+  }
+
+  .cod-video video {
+    border-radius: 20px;
   }
 
   .howto {
