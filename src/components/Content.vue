@@ -32,16 +32,19 @@
     </div>
     <div class="cod-video">
       <video width="100%" height="auto" autoplay muted loop>
-        <source src="../assets/br.mp4" type="video/mp4">
+        <source src="../assets/codm.mp4" type="video/mp4">
       </video>
     </div>
     <div class="rules">
       <h3>Rules & Regulation of the tournament</h3>
-      <li><span>-</span> Match time is 10 minutes.</li>
-      <li><span>-</span> Kindly disconnect if you notice your opponent didn't set the normal time because no complain will be heard after the match.</li>
-      <li><span>-</span> Matches start by 09:00pm and deadline for all matches is 10:30pm  the following day Nigerian time.</li>
-      <li><span>-</span> If you have difficulty in finding your opponent. Tag any of the admin, assistant will be given.</li>
-      <li><span>-</span> Last time for messaging your opponent is 8:40.. if your opponent agrees to play before the deadline fine, if not your 3 points is sure.</li>
+      <li>Match time is 10 minutes.</li>
+      <li>Kindly disconnect if you notice your opponent didn't set the normal time because no complain will be heard after the match.</li>
+      <li>Matches start by 09:00pm and deadline for all matches is 10:30pm  the following day Nigerian time.</li>
+      <li>If you have difficulty in finding your opponent. Tag any of the admin, assistant will be given.</li>
+      <li>Last time for messaging your opponent is 8:40.. if your opponent agrees to play before the deadline fine, if not your 3 points is sure.</li>
+      <router-link to="/rules">
+        <button>View all</button>
+      </router-link>
     </div>
     <div class="enquiries">
       <h4>For more enquiries and sponsorships:</h4>
@@ -180,6 +183,17 @@ export default {
     color: #232425;
   }
 
+  .rules button {
+    border: none;
+    margin-block: .6rem;
+    padding: .8rem 1.3rem;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
   .enquiries {
     margin-bottom: 1rem;
     margin-inline: 2rem;
@@ -206,5 +220,14 @@ export default {
     font-family: 'Source Sans Pro', sans-serif;
     color: #c5c0c0;
     font-size: .9rem;
+  }
+
+  @media(min-width: 48em) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
   }
 </style>

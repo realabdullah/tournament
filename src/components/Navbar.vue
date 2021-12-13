@@ -39,6 +39,7 @@ export default {
 .menu {
   display: flex;
   flex-direction: column;
+  visibility: hidden;
 }
 
 .menu div {
