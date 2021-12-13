@@ -13,6 +13,22 @@
     <div class="ad">
       <p>Do you want to participate in a one of a kind campus based mobile game tournament and win cash prizes?</p>
     </div>
+    <div class="prizes">
+      <h3>Cash prizes!!</h3>
+      <div class="prize">
+        <div class="pes-prize">
+          <h4>PES Mobile</h4>
+          <li>Winner - <span>&#8358</span>5,000</li>
+          <li>First Runner-up - <span>&#8358</span>3,000</li>
+          <li>Second Runner-up - <span>&#8358</span>2,000</li>
+        </div>
+        <div class="line"></div>
+        <div class="cod-prize">
+          <h4>COD Mobile (BR)</h4>
+          <li>Winner - <span>&#8358</span>5,000</li>
+        </div>
+      </div>
+    </div>
     <div class="cod-video">
       <video width="100%" height="auto" autoplay muted loop>
         <source src="../assets/2k19.mp4" type="video/mp4">
@@ -124,6 +140,48 @@ export default {
     font-size: 1.8rem;
     font-weight: 600;
     color: #232425;
+  }
+
+  .prizes {
+    margin-block: 2rem;
+    background-color: #232425;
+    padding: 1rem;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: -4.5px 6px 13.5px -3.5px #938181;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .prizes h3 {
+    padding-bottom: 1.3rem;
+  }
+
+  .prize {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .prize li {
+    list-style: none;
+    padding-block: .7rem;
+  }
+
+  .pes-prize {
+    flex: 1;
+  }
+
+  .cod-prize {
+    flex: 1;
+  }
+
+  .line {
+    width: 1px;
+    height: inherit;
+    background: #d4cdcd;
+    margin-inline: .4rem;
   }
 
   .cod-video {

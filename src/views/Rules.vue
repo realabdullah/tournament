@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="rule">
+  <div data-aos="zoom-in" class="rule">
     <h3>Rules & Regulation of the tournament</h3>
     <li>Match time is 10 minutes.</li>
     <li>Kindly disconnect if you notice your opponent didn't set the normal time because no complain will be heard after the match.</li>

@@ -59,9 +59,9 @@
             <div class="field padding-bottom--24">
               <label for="game">Game to play</label>
               <select @change="pes" v-model="game" required>
-                <option value="cod"><p>COD Mobile</p></option>
-                <option value="pes">PES Mobile</option>
-                <option value="both">Both</option>
+                <option value="cod"><p>COD Mobile(<span>&#8358</span>500)</p></option>
+                <option value="pes">PES Mobile(<span>&#8358</span>500)</option>
+                <option value="both">Both(<span>&#8358</span>1,000)</option>
               </select>
             </div>
             <div class="field padding-bottom--24" v-if="isCod">
@@ -71,6 +71,10 @@
             <div class="field padding-bottom--24" v-if="isPes">
               <label class="padding-bottom--7" for="teamname">Team Name</label>
               <input type="text" name="teamname" v-model="teamname" required>
+            </div>
+            <div class="field padding-bottom--24" v-if="isPes">
+              <label class="padding-bottom--7" for="userid">User Id</label>
+              <input type="text" name="userid" v-model="userid" required>
             </div>
             <div class="field padding-bottom--24"><button class="submi" v-if="loading">
                 <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
@@ -132,6 +136,7 @@ export default {
     const game = ref('')
     const codid = ref('')
     const teamname = ref('')
+    const userid = ref('')
     const loading = ref(false)
     const registered = ref(false)
     const isPes = ref(false)
@@ -165,7 +170,8 @@ export default {
             phone: phone.value,
             game: game.value,
             team_name: teamname.value,
-            cod_username: codid.value
+            cod_username: codid.value,
+            userid: userid.value
           }
         ])
         name.value = '',
@@ -176,6 +182,7 @@ export default {
         game.value = '',
         teamname.value = '',
         codid.value = ''
+        userid.value = '',
         loading.value = false
         registered.value = true
       } catch (error) {
@@ -191,6 +198,7 @@ export default {
       game,
       codid,
       teamname,
+      userid,
       loading,
       registered,
       isCod,
