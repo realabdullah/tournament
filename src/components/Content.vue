@@ -32,7 +32,7 @@
     </div>
     <div class="cod-video">
       <video width="100%" height="auto" autoplay muted loop>
-        <source src="../assets/codm.mp4" type="video/mp4">
+        <source src="../assets/br.mp4" type="video/mp4">
       </video>
     </div>
     <div class="rules">
@@ -133,6 +133,8 @@ export default {
   .cod-video video {
     border-radius: 20px;
     box-shadow:  20px 20px 60px #bebebe, -20px -19px 20px #ffffff;
+    width: 100%;
+    height: auto;
   }
 
   .howto {
