@@ -16,6 +16,11 @@ const routes = [
     path: '/rules',
     name: 'Rules',
     component: () => import('../views/Rules.vue')
+  },
+  {
+    path: '/poiuy',
+    name: 'Table',
+    component: () => import('../views/Table.vue')
   }
 ]
 
