@@ -216,6 +216,10 @@ export default {
     color: #c5c0c0;
   }
 
+  .howto li::nth-child(1) {
+    text-decoration: line-through;
+  }
+
   .howto button {
     border: none;
     margin-block: .6rem;

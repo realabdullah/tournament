@@ -104,9 +104,9 @@
   <div class="rfront" v-if="registered">
     <div class="rinner">
       <h2>Registration Successful!</h2>
-      <h2>Please click the below button for payment confirmation.</h2>
+      <h2>Please click the below button for registration confirmation.</h2>
       <button for="card1" class="button">
-        <a href="https://wa.me/2348171464003?text=Hi,%20I%20want%20to%20confirm%20my%20tournament%20payment">Click here</a>
+        <a href="https://wa.me/2348171464003?text=Hi,%20I%20want%20to%20confirm%20my%20tournament%20registration">Click here</a>
       </button>
     </div>
   </div>
@@ -213,7 +213,8 @@ export default {
 
 <style>
 .wrapper {
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-flow: row wrap;
   justify-content: center;
 }
