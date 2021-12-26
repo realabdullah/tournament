@@ -59,9 +59,9 @@
             <div class="field padding-bottom--24">
               <label for="game">Game to play</label>
               <select @change="pes" v-model="game" required>
-                <option value="cod"><p>COD Mobile(<span>&#8358</span>500)</p></option>
-                <option value="pes">PES Mobile(<span>&#8358</span>500)</option>
-                <option value="both">Both(<span>&#8358</span>1,000)</option>
+                <option value="cod"><p>COD Mobile</p></option>
+                <option value="pes">PES Mobile</option>
+                <option value="both">Both</option>
               </select>
             </div>
             <div class="field padding-bottom--24" v-if="isCod">
