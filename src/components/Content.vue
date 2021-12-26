@@ -36,7 +36,7 @@
     </div>
     <div class="howto">
       <h3>How to register</h3>
-      <li>A registration fee of #500</li>
+      <!-- <li>A registration fee of #500</li> -->
       <li>Name</li>
       <li>Faculty</li>
       <li>Department</li>
@@ -216,9 +216,9 @@ export default {
     color: #c5c0c0;
   }
 
-  .howto li::nth-child(1) {
+  /* .howto li::nth-child(1) {
     text-decoration: line-through;
-  }
+  } */
 
   .howto button {
     border: none;
